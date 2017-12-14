@@ -17,7 +17,7 @@ export class HomePage {
     public afDatabase: AngularFireDatabase,
     public alertCtrl: AlertController) {
 
-    afDatabase.list('/songs').push('new song');
+    //afDatabase.list('/songs').push('new song');
     afDatabase.list('/songs').valueChanges().subscribe(console.log);
 
     //this.songs = afDatabase.list('/songs').valueChanges();    
